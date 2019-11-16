@@ -1,0 +1,73 @@
+beginner.how_many_items_in_hdfs:
+    stdin: "provide your answer here"
+intermediate.hdfs_list_recursively:
+    stdin: "provide your answer here"
+intermediate.hdfs_list_recursively_human_readable:
+    stdin: "provide your answer here"
+intermediate.hdfs_file_replication_factor:
+    stdin: "provide your answer here"
+intermediate.hdfs_folder_replication_factor:
+    stdin: "provide your answer here"
+intermediate.hdfs_describe_size:
+    stdin: "provide your answer here"
+intermediate.hdfs_cumulative_size:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_folder:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_nested_folder:
+    stdin: "provide your answer here"
+intermediate.hdfs_remove_nested_folders:
+    stdin: "provide your answer here"
+intermediate.hdfs_trash_behavior:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_empty_file:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_small_file:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+intermediate.hdfs_output_file:
+    stdin: "provide your answer here"
+intermediate.hdfs_output_file_end:
+    stdin: "provide your answer here"
+intermediate.hdfs_output_file_start:
+    stdin: "provide your answer here"
+intermediate.hdfs_tail_vs_unix_tail:
+    stdin: "provide your answer here"
+intermediate.hdfs_copy_file:
+    stdin: "provide your answer here"
+intermediate.hdfs_move_file:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+intermediate.hdfs_download_and_concatenate:
+    stdin: "provide your answer here"
+advanced.hdfs_set_file_replication:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+advanced.hdfs_get_files_and_block:
+    stdin: "provide your answer here"
+advanced.hdfs_get_block_information:
+    stdin: "provide your answer here"
+advanced.hdfs_dfs_architecture:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+advanced.webhdfs_read_100B:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+advanced.webhdfs_curl_follow_redirects:
+    stdin: "provide your answer here"
+advanced.webhdfs_get_file_detailed_information:
+    stdin: "provide your answer here"
+advanced.webhdfs_change_file_replication:
+    stdin: "provide your answer here"
+advanced.webhdfs_append_to_file:
+    stdin: "provide your answer here"
