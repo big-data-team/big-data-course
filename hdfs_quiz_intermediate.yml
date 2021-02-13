@@ -1,0 +1,44 @@
+intermediate.hdfs_list_recursively:
+    stdin: "provide your answer here"
+intermediate.hdfs_list_recursively_human_readable:
+    stdin: "provide your answer here"
+intermediate.hdfs_file_replication_factor:
+    stdin: "provide your answer here"
+intermediate.hdfs_folder_replication_factor:
+    stdin: "provide your answer here"
+intermediate.hdfs_describe_size:
+    stdin: "provide your answer here"
+intermediate.hdfs_cumulative_size:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_folder:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_nested_folder:
+    stdin: "provide your answer here"
+intermediate.hdfs_remove_nested_folders:
+    stdin: "provide your answer here"
+intermediate.hdfs_trash_behavior:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_empty_file:
+    stdin: "provide your answer here"
+intermediate.hdfs_create_small_file:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+intermediate.hdfs_output_file:
+    stdin: "provide your answer here"
+intermediate.hdfs_output_file_end:
+    stdin: "provide your answer here"
+intermediate.hdfs_output_file_start:
+    stdin: "provide your answer here"
+intermediate.hdfs_tail_vs_unix_tail:
+    stdin: "provide your answer here"
+intermediate.hdfs_copy_file:
+    stdin: "provide your answer here"
+intermediate.hdfs_move_file:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+intermediate.hdfs_download_and_concatenate:
+    stdin: "provide your answer here"
