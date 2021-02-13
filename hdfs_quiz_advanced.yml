@@ -1,0 +1,27 @@
+advanced.hdfs_set_file_replication:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+advanced.hdfs_get_files_and_block:
+    stdin: "provide your answer here"
+advanced.hdfs_get_block_information:
+    stdin: "provide your answer here"
+advanced.hdfs_dfs_architecture:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+advanced.webhdfs_read_100B:
+    stdin: |-
+        provide your
+        multiline answer
+        here
+advanced.webhdfs_curl_follow_redirects:
+    stdin: "provide your answer here"
+advanced.webhdfs_get_file_detailed_information:
+    stdin: "provide your answer here"
+advanced.webhdfs_change_file_replication:
+    stdin: "provide your answer here"
+advanced.webhdfs_append_to_file:
+    stdin: "provide your answer here"
