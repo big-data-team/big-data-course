@@ -11,8 +11,8 @@ hdfs dfs -rm -r -skipTrash ${HDFS_OUTPUT_DIR}*
 # best practice
     # -D mapreduce.map.output.key.field.separator=. \
     # -D stream.num.map.output.key.fields=2 \
-    # -D stream.num.reduce.output.key.fields=2 \
     # -combiner cat \
+    # -D stream.num.reduce.output.key.fields=2 \
 yarn jar $HADOOP_STREAMING_JAR \
     -D mapreduce.job.output.key.comparator.class=org.apache.hadoop.mapreduce.lib.partition.KeyFieldBasedComparator \
     -D mapreduce.partition.keycomparator.options="-k1,1nr -k2,2" \
