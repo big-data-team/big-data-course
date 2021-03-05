@@ -1,0 +1,7 @@
+1990,Vasya,Pupkin,192
+1990,Alexey,Pupkin,190
+1988,Ivan,Ivanov,175
+1988,Alexey,Dral,181
+1985,Ivan,Pupkin,180
+1988,Alexey,Ivanov,180
+1985,Vaysa,Ivanov,195

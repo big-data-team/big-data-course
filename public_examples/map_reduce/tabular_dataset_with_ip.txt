@@ -1,0 +1,7 @@
+255.1.1.1	Vasya	Pupkin	192
+255.2.1.1	Alexey	Pupkin	190
+24.2.1.1	Ivan	Ivanov	175
+24.1.1.1	Alexey	Dral	181
+23.2.1.1	Ivan	Pupkin	180
+12.3.1.1	Alexey	Ivanov	180
+12.1.1.1	Vaysa	Ivanov	195
