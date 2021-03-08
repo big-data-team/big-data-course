@@ -1,0 +1,4 @@
+first	line	1
+second	line	3
+last	line	5
+\N	\N	10
