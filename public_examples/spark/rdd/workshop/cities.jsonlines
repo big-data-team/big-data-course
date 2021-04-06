@@ -1,0 +1,8 @@
+{ "name":"Moscow", "country":"Russia", "continent": "Europe", "population": 12380664}
+{ "name":"Madrid", "country":"Spain" }
+{ "name":"Paris", "country":"France", "continent": "Europe", "population" : 2196936}
+{ "name":"Berlin", "country":"Germany", "continent": "Europe", "population": 3490105}
+{ "name":"Barselona", "country":"Spain", "continent": "Europe" }
+{ "name":"Cairo", "country":"Egypt", "continent": "Africa", "population": 11922948 }
+{ "name":"Cairo", "country":"Egypt", "continent": "Africa", "population": 11922948 }
+{ "name":"New York, "country":"USA", 
