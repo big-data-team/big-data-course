@@ -31,6 +31,6 @@ Spark Cassandra will require two following flags:
 ```
 
 Useful Spark documentation links:
-* PySpark: https://spark.apache.org/docs/latest/api.html
-* Python API: https://spark.apache.org/docs/latest/api/python/pyspark.html
-* PySpark SQL API: https://spark.apache.org/docs/latest/api/python/pyspark.sql.html
+* PySpark: https://spark.apache.org/docs/2.4.7/api.html
+* Python API: https://spark.apache.org/docs/2.4.7/api/python/index.html
+* PySpark SQL API: https://spark.apache.org/docs/2.4.7/api/python/pyspark.sql.html
