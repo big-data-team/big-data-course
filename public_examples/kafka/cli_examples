@@ -1,0 +1,41 @@
+# environment initialization
+
+TOPIC=test_topic
+ZOOKEEPERS=brain-node1.bigdatateam.org:2181,brain-node2.bigdatateam.org:2181,brain-node3.bigdatateam.org:2181
+BROKERS=brain-node1.bigdatateam.org:9092,brain-node2.bigdatateam.org:9092,brain-node3.bigdatateam.org:9092
+
+
+# get list of topics
+
+kafka-topics.sh --bootstrap-server $BROKERS --list
+
+
+# create topic
+
+kafka-topics.sh --create --bootstrap-server $BROKERS --replication-factor 2 --partitions 3 --topic $TOPIC
+
+
+# get topic meta information
+
+kafka-topics.sh --describe --bootstrap-server $BROKERS --topic $TOPIC
+
+
+# write data to topic
+
+kafka-console-producer.sh --broker-list $BROKERS --topic $TOPIC
+kafka-console-producer.sh --broker-list $BROKERS --topic $TOPIC --max-partition-memory-bytes 1
+
+
+# read data from topic
+
+kafka-console-consumer.sh --bootstrap-server $BROKERS --topic $TOPIC
+kafka-console-consumer.sh --bootstrap-server $BROKERS --topic $TOPIC --from-beginning
+kafka-console-consumer.sh --bootstrap-server $BROKERS --topic $TOPIC --partition 1
+
+
+# get offsets for each partition of topic
+
+kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list $BROKERS --topic $TOPIC --time -1
+
+
+
