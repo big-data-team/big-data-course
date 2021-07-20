@@ -4,18 +4,48 @@ Practice Course on Big Data
 
 # Spark Configuration
 
-Use the following comand to start interactive Jupyter PySpark session (set Python v.3.6 as the default version):
+Use port_1 and port_2 provided to you during the class.
+
+In case you would like to run Jupyter notebook interface for pyspark, at first, you need to launch Jupyter:
 ```bash
-PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_PYTHON=python3.6 PYSPARK_DRIVER_PYTHON_OPTS='notebook --ip=0.0.0.0 --port=port_1' pyspark --conf spark.ui.port=port_2 --driver-memory 512m --master yarn --num-executors 2 --executor-cores 1
+jupyter notebook --port=port_1
 ```
 
-Add the following rule to ssh forwarding:
+As soon as you launch notebook, you can start PySpark with the help of the forllowing configuration:
+
+```python
+from pyspark import SparkConf, SparkContext
+
+spark_conf = (
+    SparkConf()
+    .set("spark.ui.port", port_2)
+    .set("spark.driver.memory", "512m")
+    .set("spark.executor.instances", "2")
+    .set("spark.executor.cores", "1")
+    .setAppName("your shiny name")
+    .setMaster("yarn")
+)
+sc = SparkContext(conf=spark_conf)
+```
+
+You will be able to use the same code snippet for spark-submit.
+
+Use the following shortuct to start interactive Jupyter Pyspark session (set Python v.3.6 as the default version):
+```bash
+PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_PYTHON=python3.6 PYSPARK_DRIVER_PYTHON_OPTS='notebook --port=port_1' pyspark --conf spark.ui.port=port_2 --driver-memory 512m --master yarn --num-executors 2 --executor-cores 1
+```
+
+## Spark Notes
+
+You usually use "brain-master" for ssh forwarding. Be cautions about "localhost" in the following code snippet.
+Add the following rule for ssh forwarding:
 ```
 -L port_1:localhost:port_1 
 ```
 
 Open the following URL in you favourite browser:
 * http://localhost:port_1
+
 
 Spark Streaming and Kafka will require to add extra flags:
 ```
