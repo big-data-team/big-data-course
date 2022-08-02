@@ -1,3 +1,4 @@
+# проверка текста на кодировку UTF-8
 advanced.hdfs_set_file_replication:
     stdin: |-
         provide your

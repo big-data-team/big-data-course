@@ -1,2 +1,3 @@
+# проверка текста на кодировку UTF-8
 beginner.how_many_items_in_hdfs:
     stdin: "provide your answer here"
