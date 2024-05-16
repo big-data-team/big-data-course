@@ -31,13 +31,15 @@ sc = SparkContext(conf=spark_conf)
 
 You will be able to use the same code snippet for spark-submit (partial example):
 ```bash
+# Spark 3.2.4
 spark-submit --conf spark.shuffle.useOldFetchProtocol=true your_shiny_pyspark_script.py
+# Spark 2.4.7
 # set relevant Python v.3.6 environment variables for Spark 2.4.7 (old version compatibility)
 SPARK_HOME=/usr/local/spark-2.4.7-bin-hadoop2.7 PYSPARK_DRIVER_PYTHON=python3.6 PYSPARK_PYTHON=python3.6 spark-submit --conf spark.shuffle.useOldFetchProtocol=true your_shiny_pyspark_script.py
 ```
 
 (NOT recommended as you have less control over spark context)
-Use the following shortuct to start interactive Jupyter Pyspark session (set Python v.3.10 as the default version):
+Use the following shortuct to start interactive Jupyter Pyspark session (you can also set Python v.3.10 as the default worker version):
 ```bash
 PYSPARK_DRIVER_PYTHON=jupyter PYSPARK_PYTHON=python3.10 PYSPARK_DRIVER_PYTHON_OPTS='notebook --port=port_1' pyspark --conf spark.ui.port=port_2 --conf spark.shuffle.useOldFetchProtocol=true --driver-memory 512m --master yarn --num-executors 2 --executor-cores 1
 ```
